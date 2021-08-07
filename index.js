@@ -1,13 +1,9 @@
 let countCorrect = 0
 var slideIndex = 1
-// Slide show 
 showSlides(slideIndex);
 
-// Chuyển tới trang tiếp
-// Nó là 1 hàm nhận vào 1 số 
+
 function plusSlides() {
-    // Ngoài việc chuyển slide -> Hay nói cách khác người dùng đã trả lời xong 
-    // Em phải kiểm tra đáp án đó có đúng k :)
     $(".group").click(function () {
         this.style.backgroundColor = "red"
     })
@@ -25,7 +21,6 @@ function showResult(n) {
 
 function changePage(n) {
     showSlides(slideIndex += n)
-    // result.innerText = countCorrect
 }
 
 function showSlides(n) {
@@ -38,8 +33,6 @@ function showSlides(n) {
     }
     page[slideIndex - 1].style.display = "block";
 }
-
-// Còn nhiều vấn đề lắm mà mấy bạn k đầu tư time nên k làm hết dc 
 
 $(".correct").click(function () {
     countCorrect++
