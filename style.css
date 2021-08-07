@@ -97,7 +97,7 @@ h1, p {
     box-shadow: 2px 2px lightgreen;
     cursor: pointer;
     opacity: 1;
-    margin-top: 20%;
+    margin-top:2.5%;
 }
 .start:hover {
     opacity: 0.8;
